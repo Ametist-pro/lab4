@@ -1,0 +1,34 @@
+<script>
+class Calculator{
+    pole1;
+    pole2;
+    constructor(pole1,pole2){
+        this.pole1 = pole1;
+        this.pole2 = pole2;
+    }
+    summa(){
+        document.writeln(`Сумма = ${this.pole1 + this.pole2}<br>`);
+    }
+    raznost(){
+        document.writeln(`Разность = ${this.pole1 - this.pole2}<br>`);
+    }
+    proizvedenie(){
+        document.writeln(`Произведение = ${this.pole1 * this.pole2}<br>`);
+    }
+    chastnoe(){
+        document.writeln(`Частное = ${this.pole1 / this.pole2}<br>`);
+    }
+}
+var n1 = new Calculator(10, 5);
+var n2 = new Calculator(-5, 7);
+var n3 = new Calculator(1, 3);
+var arr = [n1,n2,n3];
+
+for(var i = 0; i < arr.length; i++){
+arr[i].summa();
+arr[i].raznost();
+arr[i].proizvedenie();
+arr[i].chastnoe();
+document.writeln('<br>');
+}
+</script>
